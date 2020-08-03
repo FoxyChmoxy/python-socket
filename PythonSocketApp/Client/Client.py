@@ -19,6 +19,5 @@ def send(msg):
     client.send(message)
     print(client.recv(2048).decode(FORMAT))
 
-send("Hello World!")
-
-send(DISCONNECT_MESSAGE)
+while True:
+    send(input())
